@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <body>
+            <form>
+                Enter username: <input type="text" id="username">
+                Enter password: <input type="password" id="password">
+                <button onclick="validate()">submit</button>
+              </form>
+              <script>
+                  function validate(){
+                      event.preventDefault();
+                      var username=document.getElementById("username").value;
+                      var password=document.getElementById("password").value;
+                      username=="sai"&& password=="sai"? alert("success"):alert("failure");
+                  }
+              </script>
+        </body>
+    </head>
+</html>
